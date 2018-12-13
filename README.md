@@ -28,11 +28,11 @@ The current build, located in `./build/`, is an example app that utilizes the **
 This boiler plate can be triggered to build via Webpack in one of two ways, depending on the intended usage:
 
  * `npm run build` - builds a production version of the web application to the `./build/` directory
- * `npm run build-dev` - builds a development version of the web application to the `./build/` directory
+ * `npm run build-dev` - builds a development version of the web application to the `./build/` directory and initializes a watching processes to monitor changes in `./src/`
 
 ### Starting
 
 Since this bioler plate utilizes Webpack, it is possible to run a live development server while modifying files located in the `./src/` directory.
 
- * `npm run start` - starts a webserver using `http-server` which will server the `./build/` directory under http://localhost:8080/
+ * `npm run start` - starts a webserver using `http-server` which will server the `./build/` directory under [localhost:8080](http://localhost:8080/)
  * `npm run start-dev` - starts a watching devserver using `webpack-dev-server`. This will watch the `./src/` directory and rebuild the website into a temporary cache upon detected changes.
