@@ -28,6 +28,9 @@ class Sample extends Component
 
     return (
       <div className={classes.sampleContainer}>
+        <div className={classes.sample}>
+          <h1>Route - {window.location.href}</h1>
+        </div>
         {items}
       </div>
     )
