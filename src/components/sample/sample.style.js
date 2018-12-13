@@ -1,10 +1,11 @@
 const styles = theme => ( {
   sample: {
+    transition: 'all 0.4s',
     backgroundColor: theme.bgc,
     color: theme.fgc,
-    borderRadius: ( theme.rounded ) ? '0.4em' : '0',
+    borderRadius: ( theme.rounded ) ? '1em' : '0',
     padding: '1em',
-    margin: '0.4em',
+    marginTop: '0.8em',
     width: '80%',
     justifyContent: 'center',
     alignItems: 'center'
@@ -16,7 +17,13 @@ const styles = theme => ( {
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
-    alignItems: 'center'
+    alignItems: 'center',
+    "& a": { textDecoration: 'none' },
+    "& a:link": { color: theme.fgc },
+    "& a:visited": { color: theme.fgc },
+    "& a:hover": { color: '#888' },
+    "& a:active": { color: theme.fgc },
+    "& :last-child": { marginBottom: '0.8em' }
   }
 } );
 
