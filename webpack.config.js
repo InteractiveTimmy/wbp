@@ -6,8 +6,8 @@ module.exports = {
     index: './src/index.js'
   },
   output: {
-    filename: './build/[name].js',
-    path: PATH.join( __dirname, './public' )
+    filename: './[name].js',
+    path: PATH.join( __dirname, './build' )
   },
   module: {
     rules: [
